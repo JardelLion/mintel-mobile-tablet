@@ -1,0 +1,197 @@
+@font-face {
+  font-family: "interFont";
+  src: url("./../../fonts/Inter-VariableFont_slnt,wght.ttf");
+}
+body {
+  box-sizing: border-box;
+  font-family: interFont, sans-serif;
+}
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  font-family: sans-serif;
+}
+
+p {
+  font-size: 100%;
+}
+
+h1 {
+  font-size: clamp(1.75em, 1em + 2vw, 2.5em);
+}
+
+h2, h3, h4, h5, h6 {
+  font-size: clamp(1.375em, 0.875em + 2vw, 2.25em);
+}
+
+.mintel {
+  height: 43px;
+  line-height: 43px;
+  text-align: center;
+  background-color: #ffee55;
+}
+.mintel h1 {
+  font-weight: 500;
+}
+
+.logo {
+  margin-top: 208px;
+  text-align: center;
+}
+
+.phone,
+.password {
+  min-width: 300px;
+  max-width: 300px;
+  margin: 16px auto;
+  display: block;
+  border: 1.7px solid #868686;
+  border-radius: 3px;
+  height: 32px;
+  text-indent: 10px;
+}
+.phone::placeholder,
+.password::placeholder {
+  text-indent: 20px;
+  font-size: 16px;
+  color: #868686;
+}
+
+.form-login {
+  display: flex;
+  margin: 0 auto;
+  min-width: 300px;
+  max-width: 300px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#login__btn {
+  height: 32px;
+  width: 99px;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: #ffee55;
+  cursor: pointer;
+}
+
+#login__link {
+  color: #ff7d7d;
+  font-size: 16px;
+}
+
+.form-field__password {
+  display: block;
+  width: 100%;
+  max-width: 375px;
+  min-width: 300px;
+  margin: 15px auto;
+  position: relative;
+}
+.form-field__password .open-eye, .form-field__password .close-eye {
+  position: absolute;
+  top: 4px;
+  right: 45px;
+  cursor: pointer;
+}
+.form-field__password .open-eye {
+  display: block;
+}
+.form-field__password .close-eye {
+  display: none;
+}
+
+.recovery-cod {
+  margin-top: 198px;
+  margin-bottom: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 204px;
+  text-align: center;
+}
+
+#recovery__link {
+  min-width: 300px;
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+  background-color: #ffee55;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  font-size: 16px;
+  color: black;
+  border: 1px solid black;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#validar__btn {
+  height: 32px;
+  min-width: 300px;
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: #ffee55;
+  cursor: pointer;
+}
+
+/* Definindo um layout de grade basico */
+.nav__grid-container {
+  background-color: rgba(0, 0, 0, 0);
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 3 colunas com largura igual */
+  grid-gap: 1px; /* espaco de 10px entre as celulas */
+}
+
+/* Estilizando as celulas da grade */
+.grid-item {
+  background-color: black;
+  padding: 70px 0;
+  text-align: center;
+}
+.grid-item a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+.grid-item a:hover {
+  color: #ffee55;
+}
+
+.menu h1 {
+  display: block;
+  text-align: center;
+  text-indent: -50px;
+}
+
+.menu__btn {
+  display: block;
+  width: 60px;
+  height: 43px;
+  float: left;
+  background-color: #ffee55;
+  cursor: pointer;
+}
+.menu__btn img {
+  margin-top: 2px;
+  margin-left: 19px;
+  margin-right: 19px;
+  background-color: #ffee55;
+}
+
+.nav {
+  display: none;
+}
+
+#menu__xmark {
+  display: none;
+}

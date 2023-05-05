@@ -1,0 +1,99 @@
+@use "./global" as glob;
+
+.mintel {
+    height: 43px;
+    line-height: 43px;
+    text-align: center;
+    background-color: glob.$color1;
+   
+    
+    & h1 {
+        font-weight: 500;
+    }
+}
+
+
+.logo {
+    margin-top: 208px;
+    text-align: center;
+
+}
+
+.phone, 
+.password {
+    min-width: glob.$min-box-value;
+    max-width: glob.$max-box-value;
+    margin: 16px auto;
+    display: block;
+    border: 1.7px solid #868686;
+    border-radius: 3px;
+    height: 32px;
+    text-indent: 10px;
+
+    &::placeholder {
+        text-indent: 20px;
+        font-size: 16px;
+        color: #868686;
+    }
+}
+
+
+.form-login {
+    display: flex;
+    margin: 0 auto;
+    min-width: glob.$min-box-value;
+    max-width: glob.$max-box-value;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#login__btn {
+    height: 32px;
+    width: 99px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: glob.$color1;
+    cursor: pointer;
+    
+}
+
+
+#login__link {
+    color: #ff7d7d;
+    font-size: 16px;
+}
+
+
+
+
+
+.form-field__password {
+    display: block;
+    width:100%;
+    max-width: glob.$max-box-value + 75px;
+    min-width: glob.$min-box-value;
+    margin: 15px auto;
+
+    position: relative;
+
+
+
+    & .open-eye,
+    & .close-eye {
+        position: absolute;
+        top: 4px;
+        right: 45px;
+        cursor: pointer;
+ 
+       
+    }
+
+    & .open-eye {
+        display: block;
+
+    }
+
+    & .close-eye {
+        display: none;
+    }
+}

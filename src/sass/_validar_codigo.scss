@@ -1,0 +1,13 @@
+@use "./global/variables" as glob;
+
+#validar__btn {
+    height: 32px;
+    min-width: glob.$max-box-value;
+    max-width: glob.$min-box-value;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: glob.$color1;
+    cursor: pointer;
+}

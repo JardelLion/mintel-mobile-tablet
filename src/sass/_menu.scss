@@ -1,0 +1,60 @@
+@use "./global/variables" as glob;
+
+/* Definindo um layout de grade basico */
+.nav__grid-container {
+    background-color: #0000;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 3 colunas com largura igual */
+    grid-gap: 1px; /* espaco de 10px entre as celulas */
+  }
+  /* Estilizando as celulas da grade */
+.grid-item {
+    background-color: black;
+    padding: 70px 0;
+    text-align: center;
+     & a {
+        color: #fff;
+        font-weight: bold;
+        font-size: 20px;
+        cursor: pointer;
+
+        &:hover {
+            color: glob.$color1;
+
+        }
+     }
+  }
+
+.menu h1 {
+  display: block;
+  text-align: center;
+  text-indent: -50px;
+}
+
+  .menu__btn {
+    display: block;
+    width:60px;
+    height: 43px;
+    float: left;
+    background-color: glob.$color1;
+    cursor: pointer;
+
+    & img {
+      margin-top: 2px;
+      margin-left: 19px;
+      margin-right: 19px;
+      background-color: glob.$color1;
+    }
+
+  }
+
+
+.nav {
+  display: none;
+}
+
+
+
+#menu__xmark {
+  display: none;
+}
