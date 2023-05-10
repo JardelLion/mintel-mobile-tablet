@@ -1,0 +1,43 @@
+
+.newsletter {
+    width: 85%;
+    margin: 0 auto;
+
+    & .request {
+        margin-bottom: 20px;
+    }
+}
+.newsletter-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 87px;
+    margin-bottom: 50px;
+
+    &-btn {
+        width: 112px;
+        height: 29px;
+        line-height: 29px;
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 5px;
+        background-color: transparent;
+        font-size: 12px;
+        cursor: pointer;
+
+        & a {
+            display: inline-block;
+            width: 110px;
+            color: #000;
+
+            &:hover {
+                color: #000;
+            }
+           
+        }
+    }
+}
+
+#newsletter-see-list {
+    width: 89px;
+}

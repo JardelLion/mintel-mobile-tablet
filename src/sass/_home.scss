@@ -1,0 +1,104 @@
+.home {
+    width: 85%;
+    margin-top: 138px;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+
+.request {
+    // min-width: 280px;
+
+    & ul {
+        background-color: #eaeaea;
+
+        & li {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 12px;
+        }
+
+
+
+        & ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    & .green {
+        background-color: #47d72f;
+    }
+
+    & .red {
+          background-color: #ff0000;
+    }
+
+    & .black {
+        background-color: #000000;
+        color: #fff;
+    }
+
+
+    &-btn {
+        display: flex;
+        width: 100%;
+        height: 39px;
+        margin-top: 8px;
+        justify-content: space-between;
+        align-items: center;
+        color: #000;
+        cursor: pointer;
+
+        & p {
+            font-size: 12px;
+        }
+
+        & p:first-child {
+            padding-left: 12px;
+        }
+        
+        & p:last-child {
+            padding-right: 24px;
+        }
+
+    }
+}
+
+
+
+.request-list {
+    &--icon-red::after {
+        content: "";
+        display: inline-block;
+        background: url("./../../src/img/circle-check-solid-red.png");
+        width: 21px;
+        height: 21px;
+        line-height: 21px;
+        float: right;
+        margin-right: 21px;
+    }
+
+    &--icon-green::after {
+        content: "";
+        display: inline-block;
+        background: url("./../../src/img/circle-check-solid-green.png");
+        width: 21px;
+        height: 21px;
+        line-height: 21px;
+        float: right;
+        margin-right: 21px;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+

@@ -26,7 +26,7 @@ p {
 }
 
 h1 {
-    font-size: clamp(f.rem(28), f.rem(16) + 2vw, f.rem(40))
+    font-size: clamp(f.rem(16), f.rem(16) + 2vw, f.rem(40))
 };
 h2, h3, h4, h5, h6 {
     font-size: clamp(f.rem(22), f.rem(14) + 2vw, f.rem(36))

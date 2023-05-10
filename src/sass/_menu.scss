@@ -49,10 +49,24 @@
   }
 
 
-.nav {
+.menu__nav {
+ 
   display: none;
 }
 
+.show-menu {
+  display: block;
+  animation: slide-in 0.15s;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 
 
 #menu__xmark {

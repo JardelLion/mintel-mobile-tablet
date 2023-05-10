@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MINTEL</title>
     <link rel="stylesheet" href="./../../dist/css/style.css">
+    <title>NEWSLETTER</title>
 </head>
 <body>
     <header>
@@ -19,17 +19,17 @@
                 <img src="./../img/bars-solid 1.png" alt="bar solid">
             </button>
 
-            <h1>HOME</h1>
+            <h1>NEWSLETTER</h1>
         </div>
     
         <nav class="menu__nav">
             <ul class="nav__grid-container">
     
                 <li class="grid-item">
-                    <a href="">Home</a>
+                    <a href="./home.html">Home</a>
                 </li>
                 <li class="grid-item">
-                    <a href="">Newsletter</a>
+                    <a href="./newsletter.html">Newsletter</a>
                 </li>
                 <li class="grid-item">
                     <a href="">Ebooks</a>
@@ -55,7 +55,47 @@
         </nav>
     </header>
 
-</body>
+    <main class="send-newsletter close-content">
+        <section class="newsletter-section">
+            <button class="newsletter-section-btn" id="send-newsletter-email">
+                ENVIAR EMAIL
+            </button>
 
+            <button class="newsletter-section-btn" id="add-newsletter-archive">
+               ADICIONAR ANEXO
+            </button>
+
+            <input type="file" class="file">
+        </section>
+
+
+        <input type="text" name="text" class="subject" placeholder="Assunto">
+        
+        <textarea name="text" class="textarea" id="" cols="30" rows="10"
+        placeholder="Escreve aqui"></textarea>
+
+
+        <section class="newsletter-modal">
+            <h3>Enviar newsletter ?</h3>
+            
+            <section class="newsletter-section">
+                <button class="newsletter-section-btn" id="send-newsletter-email">
+                    ENVIAR EMAIL
+                </button>
+    
+                <button class="newsletter-section-btn" id="add-newsletter-archive">
+                   ADICIONAR ANEXO
+                </button>
+    
+                <input type="file" class="file">
+            </section>
+        </section>
+        
+
+    </main>
+
+    
+</body>
+<script src="./../js/file.js"></script>
 <script src="./../js/menu.js"></script>
 </html>
