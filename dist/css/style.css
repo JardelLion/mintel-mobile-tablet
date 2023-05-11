@@ -229,16 +229,6 @@ h2, h3, h4, h5, h6 {
   justify-content: space-between;
   align-items: center;
 }
-.request .green {
-  background-color: #47d72f;
-}
-.request .red {
-  background-color: #ff0000;
-}
-.request .black {
-  background-color: #000000;
-  color: #fff;
-}
 .request-btn {
   display: flex;
   width: 100%;
@@ -280,6 +270,23 @@ h2, h3, h4, h5, h6 {
   margin-right: 21px;
 }
 
+.green {
+  background-color: #47d72f;
+}
+
+.red {
+  background-color: #ff0000;
+}
+
+.black {
+  background-color: #000000;
+  color: #fff;
+}
+
+.transparent {
+  background-color: transparent;
+}
+
 .newsletter {
   width: 85%;
   margin: 0 auto;
@@ -302,7 +309,6 @@ h2, h3, h4, h5, h6 {
   display: inline-block;
   border: 1px solid black;
   border-radius: 5px;
-  background-color: transparent;
   font-size: 12px;
   cursor: pointer;
 }

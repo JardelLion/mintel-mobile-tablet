@@ -27,19 +27,6 @@
         }
     }
 
-    & .green {
-        background-color: #47d72f;
-    }
-
-    & .red {
-          background-color: #ff0000;
-    }
-
-    & .black {
-        background-color: #000000;
-        color: #fff;
-    }
-
 
     &-btn {
         display: flex;
@@ -93,6 +80,25 @@
     }
 }
 
+
+
+.green {
+    background-color: #47d72f;
+}
+
+.red {
+      background-color: #ff0000;
+}
+
+.black {
+    background-color: #000000;
+    color: #fff;
+}
+
+
+.transparent {
+    background-color: transparent;
+}
 
 
 
