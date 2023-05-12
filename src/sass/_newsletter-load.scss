@@ -1,0 +1,106 @@
+
+
+.newsletter-load {
+    
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+
+    & p {
+        color: #fff;
+    }
+
+}
+
+
+.loader {
+    width: 93px;
+    height: 93px;
+    position: relative;
+    top: -80px;
+    margin: 0 auto;
+    transform: translateZ(0);
+  }
+  
+  .loader span {
+    display: block;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    margin-top: -5px;
+    margin-left: -5px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #e6e6e6, #b3b3b3);
+    animation: loader 3s infinite linear;
+  }
+  
+  .loader span:nth-child(1) {
+    animation-delay: -1s;
+  }
+  
+  .loader span:nth-child(2) {
+    animation-delay: -0.9s;
+  }
+  
+  .loader span:nth-child(3) {
+    animation-delay: -0.8s;
+  }
+  
+  .loader span:nth-child(4) {
+    animation-delay: -0.7s;
+  }
+
+  .loader span:nth-child(5) {
+    animation-delay: -0.6s;
+  }
+  .loader span:nth-child(6) {
+    animation-delay: -0.5s;
+  }
+  .loader span:nth-child(7) {
+    animation-delay: -0.4s;
+  }
+
+  .loader span:nth-child(8) {
+    animation-delay: -0.3s;
+  }
+
+  .loader span:nth-child(9) {
+    animation-delay: -0.2s;
+  }
+  
+  .loader span:nth-child(10) {
+    animation-delay: -0.1s;
+  }
+
+
+
+
+
+
+  
+  @keyframes loader {
+    0% {
+      transform: rotate(0deg) translateX(35px) rotate(0deg);
+    }
+    25% {
+      transform: rotate(180deg) translateX(35px) rotate(-180deg);
+    }
+    50% {
+      transform: rotate(360deg) translateX(35px) rotate(-360deg);
+      background: linear-gradient(to bottom, #e6e6e6, #666666);
+    }
+    75% {
+      transform: rotate(540deg) translateX(35px) rotate(-540deg);
+      background: linear-gradient(to bottom, #e6e6e6, #444444);
+    }
+    100% {
+      transform: rotate(720deg) translateX(35px) rotate(-720deg);
+      background: linear-gradient(to bottom, #e6e6e6, #222222);
+    }
+  }

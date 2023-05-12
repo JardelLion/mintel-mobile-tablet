@@ -1,3 +1,135 @@
-.newsletter-modal {
+.modal-gray {
+    display: none;
+    background-color: #404040;
+
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+   
     
 }
+
+.modal {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 38%;
+    left: 0;
+    overflow: hidden;
+    outline: none;
+}
+
+
+.newsletter-modal {
+
+    position: relative;
+    background-color: #fff;
+    width: 225px;
+    height: 191px;
+    margin: 0 auto;
+    border-radius: 3px;
+    top: 38%;
+    z-index: 9999;
+    
+  
+   
+   
+
+
+    & h3 {
+        font-size: 13px;
+        text-align: center;
+        padding-top: 25px;
+        padding-bottom: 70px;
+        
+    }
+
+    
+}
+
+.newsletter-modal .newsletter-section {
+    justify-content: space-evenly;
+}
+
+.modal-btn {
+    width: 75px;
+    height: 32px;
+    font-size: 12px;
+    border: none;
+}
+
+
+
+.height {
+    height: 84vh;
+}
+
+
+
+
+#newsletter-modal-btn-yes a {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//second modal
+
+.newsletter-modal-archive {
+    & h3 {
+        font-size: 12px;
+        font-weight: normal;
+    
+    }
+}
+#newsletter-file-content{
+    display: block;
+    width: 171px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 23px;
+    height: 33px;
+    line-height: 33px;
+    border-radius: 2px;
+    border: 1px solid #d9d9d9d9;
+    text-align: center;
+}
+
+
+// #newsletter-modal-btn-insert {
+//     margin-top: 70px;
+// }
+
+// #newsletter-modal-btn-back {
+//     margin-top: 70px;
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -2,6 +2,7 @@
 .newsletter {
     width: 85%;
     margin: 0 auto;
+    margin-top: 70px;
 
     & .request {
         margin-bottom: 20px;
@@ -11,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 87px;
+    margin-top: 0px;
     margin-bottom: 50px;
 
     &-btn {
@@ -39,4 +40,9 @@
 
 #newsletter-see-list {
     width: 89px;
+    background-color: transparent;
+}
+
+#newsletter-send {
+    background-color: transparent;
 }

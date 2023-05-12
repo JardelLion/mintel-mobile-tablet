@@ -1,6 +1,6 @@
-const archiveFile = document.querySelector('#add-newsletter-archive')
+const archiveFile = document.querySelector('#newsletter-modal-btn-insert')
 
-const file = document.querySelector(".file");
+const file = document.querySelector("#newsletter-file-input");
 
 archiveFile.addEventListener('click', function(){
     file.click();
