@@ -12,9 +12,30 @@
 
     & p {
         color: #fff;
+        text-align: center;
+
+
+        &:last-child {
+          margin-top: 10px;
+          font-size: 12px;
+        }
     }
 
+    &-box-range {
+      color: #fff;
+      display: block;
+      width: 207px;
+      height: 20px;
+      line-height: 20px;
+      margin: 0 auto;
+      background-color: green;
+      text-align: center;
+      margin-top: 12px;
+    }
+  
+
 }
+
 
 
 .loader {

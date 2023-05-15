@@ -39,8 +39,12 @@
 }
 
 #newsletter-see-list {
-    width: 89px;
+    width: 80px;
     background-color: transparent;
+    & a {
+        width: 100%;
+    }
+
 }
 
 #newsletter-send {

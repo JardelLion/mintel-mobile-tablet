@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../../dist/css/style.css">
+    <title>EBOOKS</title>
+</head>
+<body>
+    <header>
+        <div class="mintel menu">
+        
+            <button class="menu__btn"  id='menu__xmark'>
+                <img src="./../img/xmark-solid 1.png" alt="Xmark solid 1">
+            </button>
+
+            <button class="menu__btn" id="menu__burger" >
+                <img src="./../img/bars-solid 1.png" alt="bar solid">
+            </button>
+
+            <h1>EBOOKS</h1>
+        </div>
+    
+        <nav class="menu__nav">
+            <ul class="nav__grid-container">
+    
+                <li class="grid-item">
+                    <a href="./home.html">Home</a>
+                </li>
+                <li class="grid-item">
+                    <a href="./newsletter.html">Newsletter</a>
+                </li>
+                <li class="grid-item">
+                    <a href="./ebooks.html">Ebooks</a>
+                </li>
+                <li class="grid-item">
+                    <a href="">Clientes</a>
+                </li>
+                <li class="grid-item">
+                    <a href="">Cursos</a>
+                </li>
+                <li class="grid-item">
+                    <a href="">Produtos</a>
+                </li>
+    
+                <li class="grid-item">
+                    <a href="">SMS</a>
+                </li>
+    
+                <li class="grid-item">
+                    <a href="">Sair</a>
+                </li>
+                </ul>
+        </nav>
+    </header>
+
+    <main class="send-newsletter close-content height">
+        <section class="ebook-section">
+            <button class="ebook-section-btn ebooks-btn" onclick="sendEmail()" id="ebook-btn">
+                ADICIONAR EBOOKS
+            </button>
+
+            <button class="ebook-section-btn transparent" onclick="clickArchive()" id="add-ebook-cover">
+              CAPA
+            </button>
+
+            <!-- <input type="file" class="file" id="ebook-file"> -->
+        </section>
+
+        <section class="ebook-section">
+            <input type="text" class="ebook-feed-input" id="ebook-price" placeholder="Preço">
+            <input type="datetime" class="ebook-feed-input" id="ebook-year" placeholder="Ano">
+            <input type="text" class="ebook-feed-input" id="ebook-categoria" placeholder="Categoria">
+        </section>
+
+
+        <section class="ebook-section">
+            <button class="ebook-feed" id="ebook-archive">ARQUIVO</button>
+            <input type="text" class="ebook-feed-input" id="ebook-author" placeholder="Autor">
+          
+        </section>
+
+
+
+
+
+        <input type="text" name="text" class="subject" placeholder="Titulo aqui">
+        
+        <textarea name="text" class="textarea" id="" cols="30" rows="10"
+        placeholder="Descrisão aqui"></textarea>
+
+    <!--first send email modal-->
+    <div class="modal-gray"></div>
+    <div class="modal">
+   
+        <section class="newsletter-modal">
+            <h3>Enviar newsletter ?</h3>
+            
+            <section class="newsletter-section">
+                <button class="newsletter-section-btn green modal-btn" id="newsletter-modal-btn-yes">
+                    <a href="./newsletter-load.html">SIM</a>
+                </button>
+    
+                <button class="newsletter-section-btn red modal-btn" id="newsletter-modal-btn-no">
+                   NÃO
+                </button>
+    
+               
+            </section>
+        </section>
+
+    </div>
+
+
+    <!--second archive modal-->
+    
+    <div class="modal-gray modal-archive-gray"></div>
+    <div class="modal modal-archive">
+   
+        <section class="newsletter-modal newsletter-modal-archive">
+            <h3>Inserir Anexo (3mb MAX)</h3>
+
+            <div class="archive-file" id="newsletter-file-content">
+                Inserir
+            </div>
+
+            <input type="file" id="newsletter-file-input" style="display:none;">
+            
+            <section class="newsletter-section">
+                <button class="newsletter-section-btn green modal-btn" id="newsletter-modal-btn-insert">
+                   INSERIR
+                </button>
+    
+                <button class="newsletter-section-btn red modal-btn" id="newsletter-modal-btn-back">
+                   VOLTAR
+                </button>
+    
+               
+            </section>
+        </section>
+
+    </div>
+
+   
+   
+     
+        
+
+    </main>
+
+    
+</body>
+<script src="./../js/modal.js"></script>
+<script src="./../js/file.js"></script>
+<script src="./../js/menu.js"></script>
+</html>

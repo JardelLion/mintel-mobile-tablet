@@ -1,0 +1,80 @@
+#ebook-btn{
+    width: 138px;
+    height: 29px;
+    line-height: 29px;
+    background-color: #000;
+    color: #fff;
+}
+#add-ebook-cover {
+    width: 60px;
+    height: 29px;
+    line-height: 29px;
+}
+
+
+.ebook-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 18px;
+
+    &-btn {
+        width: 112px;
+        height: 29px;
+        line-height: 29px;
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 5px;
+        font-size: 12px;
+        cursor: pointer;
+
+        & a {
+            display: inline-block;
+            width: 110px;
+            color: #000;
+
+            &:hover {
+                color: #000;
+            }
+           
+        }
+    }
+}
+
+
+.ebook-feed-input {
+    background-color: transparent;
+    border: 1px solid gray;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    
+
+
+}
+#ebook-price,
+#ebook-year {
+    width:68px;
+   
+}
+#ebook-author,
+#ebook-categoria {
+    width: 81px;
+  
+}
+
+#ebook-archive {
+    background-color: transparent;
+    border: 1px solid gray;
+    height: 23px;
+    line-height: 23px;
+   
+
+}
+
+
+#ebook-archive {
+    width: 81px;
+    cursor: pointer;
+}

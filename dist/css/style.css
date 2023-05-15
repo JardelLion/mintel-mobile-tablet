@@ -323,8 +323,11 @@ h2, h3, h4, h5, h6 {
 }
 
 #newsletter-see-list {
-  width: 89px;
+  width: 80px;
   background-color: transparent;
+}
+#newsletter-see-list a {
+  width: 100%;
 }
 
 #newsletter-send {
@@ -439,6 +442,11 @@ h2, h3, h4, h5, h6 {
 .newsletter-modal-archive h3 {
   font-size: 12px;
   font-weight: normal;
+  padding-bottom: 20px;
+}
+
+.archive-file {
+  margin-bottom: 20px;
 }
 
 #newsletter-file-content {
@@ -465,6 +473,22 @@ h2, h3, h4, h5, h6 {
 }
 .newsletter-load p {
   color: #fff;
+  text-align: center;
+}
+.newsletter-load p:last-child {
+  margin-top: 10px;
+  font-size: 12px;
+}
+.newsletter-load-box-range {
+  color: #fff;
+  display: block;
+  width: 207px;
+  height: 20px;
+  line-height: 20px;
+  margin: 0 auto;
+  background-color: green;
+  text-align: center;
+  margin-top: 12px;
 }
 
 .loader {
@@ -549,4 +573,87 @@ h2, h3, h4, h5, h6 {
     transform: rotate(720deg) translateX(35px) rotate(-720deg);
     background: linear-gradient(to bottom, #e6e6e6, #222222);
   }
+}
+.ebooks {
+  margin-bottom: 25px;
+}
+
+.ebooks-btn {
+  width: 132px;
+  height: 29px;
+  line-height: 29px;
+  font-size: 12px;
+}
+.ebooks-btn a {
+  width: 100%;
+}
+
+#ebook-btn {
+  width: 138px;
+  height: 29px;
+  line-height: 29px;
+  background-color: #000;
+  color: #fff;
+}
+
+#add-ebook-cover {
+  width: 60px;
+  height: 29px;
+  line-height: 29px;
+}
+
+.ebook-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 18px;
+}
+.ebook-section-btn {
+  width: 112px;
+  height: 29px;
+  line-height: 29px;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.ebook-section-btn a {
+  display: inline-block;
+  width: 110px;
+  color: #000;
+}
+.ebook-section-btn a:hover {
+  color: #000;
+}
+
+.ebook-feed-input {
+  background-color: transparent;
+  border: 1px solid gray;
+  height: 23px;
+  line-height: 23px;
+  text-align: center;
+}
+
+#ebook-price,
+#ebook-year {
+  width: 68px;
+}
+
+#ebook-author,
+#ebook-categoria {
+  width: 81px;
+}
+
+#ebook-archive {
+  background-color: transparent;
+  border: 1px solid gray;
+  height: 23px;
+  line-height: 23px;
+}
+
+#ebook-archive {
+  width: 81px;
+  cursor: pointer;
 }
