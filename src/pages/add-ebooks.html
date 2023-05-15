@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./../../dist/css/style.css">
+    <link rel="stylesheet" href="./../../dist/css/add-ebooks.css">
+    <link rel="stylesheet" href="./../../dist/css/modal.css">
     <title>EBOOKS</title>
 </head>
 <body>
@@ -19,7 +21,7 @@
                 <img src="./../img/bars-solid 1.png" alt="bar solid">
             </button>
 
-            <h1>EBOOKS</h1>
+            <h1 class="mintel-title">EBOOKS</h1>
         </div>
     
         <nav class="menu__nav">
@@ -55,7 +57,7 @@
         </nav>
     </header>
 
-    <main class="send-newsletter close-content height">
+    <main class="main close-content height">
         <section class="ebook-section">
             <button class="ebook-section-btn ebooks-btn" onclick="sendEmail()" id="ebook-btn">
                 ADICIONAR EBOOKS
@@ -90,19 +92,73 @@
         <textarea name="text" class="textarea" id="" cols="30" rows="10"
         placeholder="Descrisão aqui"></textarea>
 
+
+
     <!--first send email modal-->
     <div class="modal-gray"></div>
-    <div class="modal">
+    <div class="modal-box">
    
-        <section class="newsletter-modal">
-            <h3>Enviar newsletter ?</h3>
+        <div class="modal-box-content">
+            <h3>Adicionar Ebook ?</h3>
             
-            <section class="newsletter-section">
-                <button class="newsletter-section-btn green modal-btn" id="newsletter-modal-btn-yes">
+            <section class="modal-box-section">
+                <button class="modal-box-section-btn green modal-btn" id="newsletter-modal-btn-yes">
                     <a href="./newsletter-load.html">SIM</a>
                 </button>
     
-                <button class="newsletter-section-btn red modal-btn" id="newsletter-modal-btn-no">
+                <button class="modal-box-section-btn red modal-btn" id="newsletter-modal-btn-no">
+                   NÃO
+                </button>
+    
+               
+            </section>
+        </div>
+
+    </div>
+
+
+    <!--second archive modal-->
+    
+    <div class="modal-gray modal-gray-archive"></div>
+    <div class="modal-box modal-box-archive">
+   
+        <div class="modal-box-content">
+            <h3>Inserir Arquivo (PDF)</h3>
+
+            <div class="modal-box-archive-file" id="newsletter-file-content">
+                Inserir
+            </div>
+
+            <input type="file" id="newsletter-file-input" style="display:none;">
+            
+            <section class="modal-box-section">
+                <button class="modal-box-section-btn green modal-btn" id="newsletter-modal-btn-insert">
+                   INSERIR
+                </button>
+    
+                <button class="modal-box-section-btn red modal-btn" id="newsletter-modal-btn-back">
+                   VOLTAR
+                </button>
+    
+               
+            </section>
+        </div>
+
+    </div>
+
+    <!-- first send email modal
+    <div class="modal-gray"></div>
+    <div class="modal">
+   
+        <section class="modal-box">
+            <h3>Adicionar Ebook ?</h3>
+            
+            <section class="modal-box-section">
+                <button class="modal-box-section-btn green modal-btn" id="newsletter-modal-btn-yes">
+                    <a href="./newsletter-load.html">SIM</a>
+                </button>
+    
+                <button class="modal-box-section-btn red modal-btn" id="newsletter-modal-btn-no">
                    NÃO
                 </button>
     
@@ -113,26 +169,36 @@
     </div>
 
 
-    <!--second archive modal-->
+    second archive modal
     
-    <div class="modal-gray modal-archive-gray"></div>
+    <div class="modal-gray modal-archive-gray">
+
+        <div class="modal-ebook-pop-up">
+            <p>Erro, algo inexperado aconteceu</p>
+        </div>
+
+        <div class="modal-ebook-pop-up--green">
+            <p>Inseriu o Arquivo</p>
+        </div>
+    </div>
+   
     <div class="modal modal-archive">
    
-        <section class="newsletter-modal newsletter-modal-archive">
-            <h3>Inserir Anexo (3mb MAX)</h3>
+        <section class="modal-archive">
+            <h3>Inserir Arquivo (PDF)</h3>
 
-            <div class="archive-file" id="newsletter-file-content">
+            <div class="archive-file" id="ebook-file-content">
                 Inserir
             </div>
 
-            <input type="file" id="newsletter-file-input" style="display:none;">
+            <input type="file" id="ebook-file-input" style="display:none;">
             
-            <section class="newsletter-section">
-                <button class="newsletter-section-btn green modal-btn" id="newsletter-modal-btn-insert">
+            <section class="ebook-section">
+                <button class="ebook-section-btn green modal-btn" id="ebook-btn-insert">
                    INSERIR
                 </button>
     
-                <button class="newsletter-section-btn red modal-btn" id="newsletter-modal-btn-back">
+                <button class="newsletter-section-btn red modal-btn" id="modal-btn-back">
                    VOLTAR
                 </button>
     
@@ -140,7 +206,7 @@
             </section>
         </section>
 
-    </div>
+    </div> -->
 
    
    
@@ -152,6 +218,6 @@
     
 </body>
 <script src="./../js/modal.js"></script>
-<script src="./../js/file.js"></script>
+<script src="./../js/newsletter.js"></script>
 <script src="./../js/menu.js"></script>
 </html>

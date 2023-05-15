@@ -1,0 +1,100 @@
+#ebook-btn {
+  width: 138px;
+  height: 29px;
+  line-height: 29px;
+  background-color: #000;
+  color: #fff;
+}
+
+#add-ebook-cover {
+  width: 60px;
+  height: 29px;
+  line-height: 29px;
+}
+
+.ebook-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 18px;
+}
+.ebook-section-btn {
+  width: 112px;
+  height: 29px;
+  line-height: 29px;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.ebook-section-btn a {
+  display: inline-block;
+  width: 110px;
+  color: #000;
+}
+.ebook-section-btn a:hover {
+  color: #000;
+}
+
+.ebook-feed-input {
+  background-color: transparent;
+  border: 1px solid gray;
+  height: 23px;
+  line-height: 23px;
+  text-align: center;
+}
+
+#ebook-price,
+#ebook-year {
+  width: 68px;
+}
+
+#ebook-author,
+#ebook-categoria {
+  width: 81px;
+}
+
+#ebook-archive {
+  background-color: transparent;
+  border: 1px solid gray;
+  height: 23px;
+  line-height: 23px;
+}
+
+#ebook-archive {
+  width: 81px;
+  cursor: pointer;
+}
+
+.modal-ebook-pop-up,
+.modal-ebook-pop-up--green {
+  display: none;
+  width: 95%;
+  margin: 15px auto 0 auto;
+  height: 43px;
+  line-height: 43px;
+  border-radius: 3px;
+  background-color: red;
+  z-index: 1;
+}
+.modal-ebook-pop-up p,
+.modal-ebook-pop-up--green p {
+  text-align: center;
+}
+.modal-ebook-pop-up p::before,
+.modal-ebook-pop-up--green p::before {
+  display: inline-block;
+  position: relative;
+  content: " ";
+  background: url("./../../src/img/bell-regular 1.png");
+  width: 21px;
+  height: 25px;
+  top: 8px;
+  left: -16px;
+}
+
+.modal-ebook-pop-up--green {
+  background-color: green;
+}

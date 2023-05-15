@@ -78,3 +78,56 @@
     width: 81px;
     cursor: pointer;
 }
+
+
+.modal-ebook-pop-up,
+.modal-ebook-pop-up--green {
+    display: none;
+    width: 95%;
+    margin: 15px auto 0 auto;
+    height: 43px;
+    line-height: 43px;
+    border-radius: 3px;
+    background-color: red;
+    z-index: 1;
+
+    & p {
+        text-align: center;
+
+        &::before {
+            display: inline-block;
+            position: relative;
+            content: ' ';
+            background: url("./../../src/img/bell-regular\ 1.png");
+            width: 21px;
+            height: 25px;
+            top: 8px;
+            left: -16px;
+        }
+    }
+}
+
+
+
+
+.modal-ebook-pop-up--green {
+    background-color: green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,14 +1,12 @@
 
-.newsletter {
-    width: 85%;
-    margin: 0 auto;
+.main {
     margin-top: 70px;
 
     & .request {
         margin-bottom: 20px;
     }
 }
-.newsletter-section {
+.newsletter-section{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,3 +48,18 @@
 #newsletter-send {
     background-color: transparent;
 }
+
+
+
+
+
+
+#newsletter-modal-btn-yes a {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+
+

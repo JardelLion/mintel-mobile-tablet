@@ -12,7 +12,7 @@
     
 }
 
-.modal {
+.modal-box {
     display: none;
     position: absolute;
     width: 100%;
@@ -23,7 +23,7 @@
 }
 
 
-.newsletter-modal {
+.modal-box-content{
 
     position: relative;
     background-color: #fff;
@@ -35,9 +35,6 @@
     z-index: 9999;
     
   
-   
-   
-
 
     & h3 {
         font-size: 13px;
@@ -50,89 +47,44 @@
     
 }
 
-.newsletter-modal .newsletter-section {
-    justify-content: space-evenly;
-}
 
-.modal-btn {
-    width: 75px;
-    height: 32px;
-    font-size: 12px;
-    border: none;
-}
+.modal-box-section {
+    display: flex;
+    justify-content: space-around;
 
-
-
-.height {
-    height: 84vh;
-}
-
-
-
-
-#newsletter-modal-btn-yes a {
-    width: 100%;
-    margin: 0 auto;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-//second modal
-
-.newsletter-modal-archive {
-    & h3 {
+    &-btn {
+        width: 75px;
+        height: 32px;
         font-size: 12px;
-        font-weight: normal;
-        padding-bottom: 20px;
-    
+        border: none;
+        border-radius: 3px;
+
     }
+
 }
 
-.archive-file {
-    margin-bottom: 20px;
+
+
+.modal-box-archive .modal-box-content h3 {
+    font-size: 12px;
+    font-weight: normal;
+    padding-bottom: 20px;
 }
-#newsletter-file-content{
+
+
+.modal-box-archive-file {
     display: block;
     width: 171px;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 23px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    margin-right: auto;
     height: 33px;
     line-height: 33px;
     border-radius: 2px;
     border: 1px solid #d9d9d9d9;
     text-align: center;
 }
-
-
-// #newsletter-modal-btn-insert {
-//     margin-top: 70px;
-// }
-
-// #newsletter-modal-btn-back {
-//     margin-top: 70px;
-
-// }
-
-
-
-
-
-
-
-
-
-
 
 
 

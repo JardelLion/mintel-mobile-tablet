@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./../../dist/css/style.css">
+    <link rel="stylesheet" href="./../../dist/css/modal.css">
     <title>NEWSLETTER</title>
 </head>
 <body>
@@ -55,7 +56,7 @@
         </nav>
     </header>
 
-    <main class="send-newsletter close-content height">
+    <main class="main close-content height">
         <section class="newsletter-section">
             <button class="newsletter-section-btn" onclick="sendEmail()" id="send-newsletter-email">
                 ENVIAR EMAIL
@@ -76,53 +77,53 @@
 
     <!--first send email modal-->
     <div class="modal-gray"></div>
-    <div class="modal">
+    <div class="modal-box">
    
-        <section class="newsletter-modal">
+        <div class="modal-box-content">
             <h3>Enviar newsletter ?</h3>
             
-            <section class="newsletter-section">
-                <button class="newsletter-section-btn green modal-btn" id="newsletter-modal-btn-yes">
+            <section class="modal-box-section">
+                <button class="modal-box-section-btn green modal-btn" id="newsletter-modal-btn-yes">
                     <a href="./newsletter-load.html">SIM</a>
                 </button>
     
-                <button class="newsletter-section-btn red modal-btn" id="newsletter-modal-btn-no">
+                <button class="modal-box-section-btn red modal-btn" id="newsletter-modal-btn-no">
                    NÃO
                 </button>
     
                
             </section>
-        </section>
+        </div>
 
     </div>
 
 
     <!--second archive modal-->
     
-    <div class="modal-gray modal-archive-gray"></div>
-    <div class="modal modal-archive">
+    <div class="modal-gray modal-gray-archive"></div>
+    <div class="modal-box modal-box-archive">
    
-        <section class="newsletter-modal newsletter-modal-archive">
+        <div class="modal-box-content">
             <h3>Inserir Anexo (3mb MAX)</h3>
 
-            <div class="archive-file" id="newsletter-file-content">
+            <div class="modal-box-archive-file" id="newsletter-file-content">
                 Inserir
             </div>
 
             <input type="file" id="newsletter-file-input" style="display:none;">
             
-            <section class="newsletter-section">
-                <button class="newsletter-section-btn green modal-btn" id="newsletter-modal-btn-insert">
+            <section class="modal-box-section">
+                <button class="modal-box-section-btn green modal-btn" id="newsletter-modal-btn-insert">
                    INSERIR
                 </button>
     
-                <button class="newsletter-section-btn red modal-btn" id="newsletter-modal-btn-back">
+                <button class="modal-box-section-btn red modal-btn" id="newsletter-modal-btn-back">
                    VOLTAR
                 </button>
     
                
             </section>
-        </section>
+        </div>
 
     </div>
 
@@ -135,7 +136,7 @@
 
     
 </body>
+<script src="./../js/newsletter.js"></script>
 <script src="./../js/modal.js"></script>
-<script src="./../js/file.js"></script>
 <script src="./../js/menu.js"></script>
 </html>
