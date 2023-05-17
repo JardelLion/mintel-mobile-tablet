@@ -1,46 +1,41 @@
-const modalGray = document.querySelector('.modal-gray');
-const modalBox = document.querySelector('.modal-box');
+const myButtonModal = document.querySelector(".modal-send");
+const myModal = document.getElementById("myModal");
+const myOverlay = document.getElementById("myOverlay");
+const closeBtn = document.querySelector(".close");
 
+myButtonModal.addEventListener("click", function() {
+  myModal.style.display = "block";
+  myOverlay.style.display = "block";
+});
 
-const modalGrayArchive = document.querySelector('.modal-gray-archive');
-const modalBoxArchive = document.querySelector('.modal-box-archive');
+myOverlay.addEventListener("click", function() {
+  myModal.style.display = "none";
+  myOverlay.style.display = "none";
+});
 
-
-
-
-
-const clickArchive = function(){
-    modalGrayArchive.style.display = 'block';
-    modalBoxArchive.style.display = 'block';
-}
-
-
-
-
-
-
-modalGray.addEventListener('click', function(){
-    if(this.style.display == 'none'){
-        this.style.display = 'block';
-        modalBox.style.display = 'block';
-    } else {
-        this.style.display = 'none';
-        modalBox.style.display = 'none';
-    }
-      
-    }) 
+closeBtn.addEventListener("click", function() {
+  myModal.style.display = "none";
+  myOverlay.style.display = "none";
+});
 
 
 
-modalGrayArchive.addEventListener('click', function(){
-    if(this.style.display == 'none'){
-        this.style.display = 'block';
-        modalBoxArchive.style.display = 'block';
-    } else {
-        this.style.display = 'none';
-        modalBoxArchive.style.display = 'none';
-    }
-      
-    }) 
+const myButtonArchive = document.querySelector(".modal-archive");
+const myModalArchive = document.querySelector(".myModal-archive");
+const myOverlayArchive = document.getElementById("myOverlay-archive");
+const closeBtnArchive = document.querySelector(".close-archive");
 
+myButtonArchive.addEventListener("click", function() {
+  myModalArchive.style.display = "block";
+  myOverlayArchive.style.display = "block";
+});
 
+myOverlayArchive.addEventListener("click", function() {
+  myModalArchive.style.display = "none";
+  myOverlayArchive.style.display = "none";
+});
+
+closeBtnArchive.addEventListener("click", function() {
+  myModalArchive.style.display = "none";
+  myOverlayArchive.style.display = "none";
+});

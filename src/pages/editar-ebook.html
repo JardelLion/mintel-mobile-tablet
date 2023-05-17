@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./../../dist/css/style.css">
+    <link rel="stylesheet" href="./../../dist/css/add-ebooks.css">
     <link rel="stylesheet" href="./../../dist/css/modal.css">
-    <link rel="stylesheet" href="./../../dist/css/newsletter.css">
-    <title>NEWSLETTER</title>
+    <link rel="stylesheet" href="./../../dist/css/pop_up.css">
+    <title>EBOOKS</title>
 </head>
 <body>
     <header>
@@ -21,7 +22,7 @@
                 <img src="./../img/bars-solid 1.png" alt="bar solid">
             </button>
 
-            <h1>NEWSLETTER</h1>
+            <h1 class="mintel-title">EBOOKS</h1>
         </div>
     
         <nav class="menu__nav">
@@ -58,73 +59,62 @@
     </header>
 
     <main class="main close-content height">
-        <section class="newsletter-section">
-            <button class="newsletter-section-btn modal-send" id="send-newsletter-email">
-                ENVIAR EMAIL
+     
+        <section class="ebook-section">
+            <button class="ebook-section-btn ebook-btn" id="ebook-btn">
+                EDITAR EBOOK
             </button>
 
-            <button class="newsletter-section-btn transparent modal-archive" id="add-newsletter-archive">
-               ADICIONAR ANEXO
+            <button class="ebook-section-btn transparent modal-archive" id="add-ebook-cover">
+              CAPA
             </button>
 
-            <input type="file" class="file">
+           
+        </section>
+
+        <section class="ebook-section">
+            <input type="text" class="ebook-feed-input" id="ebook-price" placeholder="Preço">
+            <input type="datetime" class="ebook-feed-input" id="ebook-year" placeholder="Ano">
+            <input type="text" class="ebook-feed-input" id="ebook-categoria" placeholder="Categoria">
         </section>
 
 
-        <input type="text" name="text" class="subject" placeholder="Assunto">
+        <section class="ebook-section">
+            <button class="ebook-feed" id="ebook-archive">ARQUIVO</button>
+            <input type="text" class="ebook-feed-input" id="ebook-author" placeholder="Autor">
+          
+        </section>
+
+
+
+
+
+        <input type="text" name="text" class="subject" placeholder="Titulo aqui">
         
         <textarea name="text" class="textarea" id="" cols="30" rows="10"
-        placeholder="Escreve aqui"></textarea>
+        placeholder="Descrisão aqui"></textarea>
 
-    
-    
 
-    <!--first modal-->
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-box-content">
-                <h3>Enviar newsletter ?</h3>
-                
-                <section class="modal-box-section">
-                    <button class="modal-box-section-btn green modal-btn" id="newsletter-modal-btn-yes">
-                        <a href="./newsletter-load.html">SIM</a>
-                    </button>
+
         
-                    <button class="modal-box-section-btn red modal-btn close" id="newsletter-modal-btn-no">
-                       NÃO
-                    </button>
-        
-                   
-                </section>
-            </div>
-        </div>
-        </div>
-        
-    <div id="myOverlay" class="overlay"></div>
-
-
-
-
-
-
     <!--second modal-->
     <div id="myModal" class="modal myModal-archive">
         <div class="modal-content modal-box-archive">
             <div class="modal-box-content">
-                <h3>Inserir Anexo (3mb MAX)</h3>
+                <h3>Inserir Arquivo (PDF)</h3>
 
-                <div class="modal-box-archive-file" id="newsletter-file-content">
+                <div class="modal-box-archive-file" id="ebook-file-name">
                     Inserir
                 </div>
     
-                <input type="file" id="newsletter-file-input" style="display:none;">
+                <input type="file" id="ebook-file-input" style="display:none;">
                 
                 <section class="modal-box-section">
-                    <button class="modal-box-section-btn green" id="newsletter-modal-btn-insert">
+                    <button class="modal-box-section-btn green" id="ebook-modal-btn-insert">
                        INSERIR
                     </button>
         
-                    <button class="modal-box-section-btn red close-archive" id="newsletter-modal-btn-back">
+                    <button class="modal-box-section-btn red close-archive">
                        VOLTAR
                     </button>
         
@@ -137,11 +127,30 @@
         </div>
         
     <div id="myOverlay-archive" class="overlay"></div>
-          
+
+
+
+    <!--the pop up-->
+
+    <div id="myPopup" class="popup">
+      <span class="close-pop-up">&times;</span>
+      <p></p>
+    </div>
+
+
+
+        
+
     </main>
 
     
 </body>
 <script src="./../js/modal.js"></script>
 <script src="./../js/menu.js"></script>
+<script src="./../js/addEbook.js"></script>
+<script src="./../js/popUp.js"></script>
 </html>
+
+
+
+

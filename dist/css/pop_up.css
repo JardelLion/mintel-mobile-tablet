@@ -1,0 +1,47 @@
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 5%;
+  top: -50px;
+  width: 90%;
+  height: 50px;
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s ease-in-out;
+}
+
+.popup p {
+  margin: 10px;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  line-height: 24px;
+}
+.popup p::before {
+  display: inline-block;
+  position: relative;
+  content: "";
+  width: 21px;
+  height: 24px;
+  line-height: 24px;
+  background: url("./../../src/img/bell-regular 1.png");
+  left: -30px;
+  top: 5px;
+}
+
+.popup .close-pop-up {
+  position: absolute;
+  top: 8px;
+  right: 20px;
+  font-size: 35px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+.popup .close-pop-up:hover {
+  color: #999;
+}

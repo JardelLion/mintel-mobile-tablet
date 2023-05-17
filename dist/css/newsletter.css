@@ -1,0 +1,49 @@
+.main {
+  margin-top: 70px;
+}
+.main .request {
+  margin-bottom: 20px;
+}
+
+.newsletter-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+.newsletter-section-btn {
+  width: 112px;
+  height: 29px;
+  line-height: 29px;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.newsletter-section-btn a {
+  display: inline-block;
+  width: 110px;
+  color: #000;
+}
+.newsletter-section-btn a:hover {
+  color: #000;
+}
+
+#newsletter-see-list {
+  width: 80px;
+  background-color: transparent;
+}
+#newsletter-see-list a {
+  width: 100%;
+}
+
+#newsletter-send {
+  background-color: transparent;
+}
+
+#newsletter-modal-btn-yes a {
+  width: 100%;
+  margin: 0 auto;
+}
