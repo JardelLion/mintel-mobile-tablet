@@ -6,7 +6,9 @@ const myPopupText = document.querySelector('.popup p')
 
 
 const ebookFileInputActivePopup = document.querySelector('#ebook-file-input');
-
+let jardel = function(){
+  console.log('fjdf')
+}
 
 
 ebookFileInputActivePopup.addEventListener('change',function(){
@@ -41,18 +43,7 @@ ebookFileInputActivePopup.addEventListener('change',function(){
     }
 });
 
-// myButton.addEventListener("click", function() {
-//   myPopup.style.display = "block";
-//   setTimeout(function() {
-//     myPopup.style.top = "10px";
-//   }, 100);
-//   setTimeout(function() {
-//     myPopup.style.top = "-50px";
-//     setTimeout(function() {
-//       myPopup.style.display = "none";
-//     }, 500);
-//   }, 3000);
-// });
+
 
 closePopup.addEventListener("click", function() {
   myPopup.style.top = "-50px";

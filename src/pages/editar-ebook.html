@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./../../dist/css/style.css">
     <link rel="stylesheet" href="./../../dist/css/add-ebooks.css">
-    <link rel="stylesheet" href="./../../dist/css/modal.css">
     <link rel="stylesheet" href="./../../dist/css/pop_up.css">
+    <link rel="stylesheet" href="./../../dist/css/editar_ebook.css">
+    <link rel="stylesheet" href="./../../dist/css/modal.css">
     <title>EBOOKS</title>
 </head>
 <body>
@@ -61,11 +62,11 @@
     <main class="main close-content height">
      
         <section class="ebook-section">
-            <button class="ebook-section-btn ebook-btn" id="ebook-btn">
+            <button class="ebook-section-btn ebook-btn modal-send" id="editEbook-btn">
                 EDITAR EBOOK
             </button>
 
-            <button class="ebook-section-btn transparent modal-archive" id="add-ebook-cover">
+            <button class="ebook-section-btn transparent modal-archive" id="editEbook-cover">
               CAPA
             </button>
 
@@ -95,26 +96,55 @@
         placeholder="Descrisão aqui"></textarea>
 
 
-
-        
-    <!--second modal-->
-    <div id="myModal" class="modal myModal-archive">
-        <div class="modal-content modal-box-archive">
-            <div class="modal-box-content">
-                <h3>Inserir Arquivo (PDF)</h3>
-
-                <div class="modal-box-archive-file" id="ebook-file-name">
-                    Inserir
-                </div>
     
-                <input type="file" id="ebook-file-input" style="display:none;">
+    <!--first modal-->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-box-content">
+                <h3>Enviar newsletter ?</h3>
                 
                 <section class="modal-box-section">
-                    <button class="modal-box-section-btn green" id="ebook-modal-btn-insert">
-                       INSERIR
+                    <button class="modal-box-section-btn green modal-btn" id="editEbook-modal-btn-yes">
+                        <a href="./newsletter-load.html">SIM</a>
                     </button>
         
-                    <button class="modal-box-section-btn red close-archive">
+                    <button class="modal-box-section-btn red modal-btn close" id="editEbook-modal-btn-no">
+                       NÃO
+                    </button>
+        
+                   
+                </section>
+            </div>
+        </div>
+        </div>
+        
+    <div id="myOverlay" class="overlay"></div>
+
+
+
+
+
+
+    <!--second modal-->
+    <div id="myModal" class="modal myModal-archive editEbook-modal">
+        <div class="modal-content modal-box-archive">
+            <div class="modal-box-content">
+
+
+                <input type="file" id="editEbook-file-input" accept="image/jpeg image/png" style="display:block;">
+                <div id="imageContainer"></div>
+                
+                
+                <section class="modal-box-section">
+                    <button class="modal-box-section-btn green" id="editEbook-modal-btn-insert" onclick="editOpenFile()">
+                       ALTERAR
+                    </button>
+
+                    <button  class="modal-box-section-btn green " id="deleteButton" disabled style="display:none">
+                        APAGAR
+                    </button>
+        
+                    <button class="modal-box-section-btn red close-archive" id="editEbook-modal-btn-back">
                        VOLTAR
                     </button>
         
@@ -124,9 +154,14 @@
 
             </div>
         </div>
-        </div>
+    </div>
         
     <div id="myOverlay-archive" class="overlay"></div>
+
+
+
+        
+  
 
 
 
@@ -145,12 +180,10 @@
 
     
 </body>
-<script src="./../js/modal.js"></script>
 <script src="./../js/menu.js"></script>
-<script src="./../js/addEbook.js"></script>
-<script src="./../js/popUp.js"></script>
+<script src="./../js/editarEbook.js"></script>
+<script src="./../js/modal.js"></script>
+<script src="./../js/cover.js"></script>
+
 </html>
-
-
-
 

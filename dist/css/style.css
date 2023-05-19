@@ -419,7 +419,7 @@ h2, h3, h4, h5, h6 {
   margin-bottom: 25px;
 }
 
-.ebooks-btn {
+.ebook-btn {
   width: 132px;
   height: 29px;
   line-height: 29px;
@@ -428,7 +428,7 @@ h2, h3, h4, h5, h6 {
   border: 1px solid black;
   border-radius: 5px;
 }
-.ebooks-btn a {
+.ebook-btn a {
   display: block;
   width: 100%;
   color: #000;

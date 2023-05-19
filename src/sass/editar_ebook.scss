@@ -1,0 +1,40 @@
+.active{
+    background-color: #ffee55;
+    color:#000;
+}
+
+#editEbook-cover{
+    width: 60px;
+    height: 29px;
+    line-height: 29px;
+
+}
+
+
+
+.editEbook-modal{
+    width: 224px !important;
+    height: 333px !important;
+}
+
+
+.modal-box-content #imageContainer {
+    display: block;
+    width: 100%;
+    height:260px;
+    margin: 0 auto 10px auto;
+   
+}
+
+
+
+#imageContainer {
+    margin-top: 10px;
+  }
+  
+  #imageContainer img {
+    display: block;
+    max-width: 100%;
+    height: 260px;
+    margin: 0 auto;
+  }
