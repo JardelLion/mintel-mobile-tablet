@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../../dist/css/style.css">
+    
+    <link rel="stylesheet" href="./../../dist/css/pop_up.css">
+    <link rel="stylesheet" href="./../../dist/css/modal.css">
+
+    <link rel="stylesheet" href="./../../dist/css/clientes.css">
+
+    <title>CLIENTES</title>
+</head>
+<body>
+    <header>
+        <div class="mintel menu">
+        
+            <button class="menu__btn"  id='menu__xmark'>
+                <img src="./../img/xmark-solid 1.png" alt="Xmark solid 1">
+            </button>
+
+            <button class="menu__btn" id="menu__burger" >
+                <img src="./../img/bars-solid 1.png" alt="bar solid">
+            </button>
+
+            <h1 class="mintel-title">CLIENTES</h1>
+        </div>
+    
+        <nav class="menu__nav">
+            <ul class="nav__grid-container">
+    
+                <li class="grid-item">
+                    <a href="./home.html">Home</a>
+                </li>
+                <li class="grid-item">
+                    <a href="./newsletter.html">Newsletter</a>
+                </li>
+                <li class="grid-item">
+                    <a href="./ebooks.html">Ebooks</a>
+                </li>
+                <li class="grid-item">
+                    <a href="./clientes.html">Clientes</a>
+                </li>
+                <li class="grid-item">
+                    <a href="">Cursos</a>
+                </li>
+                <li class="grid-item">
+                    <a href="">Produtos</a>
+                </li>
+    
+                <li class="grid-item">
+                    <a href="">SMS</a>
+                </li>
+    
+                <li class="grid-item">
+                    <a href="">Sair</a>
+                </li>
+                </ul>
+        </nav>
+    </header>
+
+    <main class="main close-content height">
+     
+        <section class="client-section">
+            <button class="client-section-btn ebook-btn" id="editClient-btn">
+                EDITAR EBOOK
+            </button>
+
+        
+        </section>
+
+        <section class="client-section">
+            <input type="text" class="client-name-input" id="client-name" placeholder="Nome">
+            <input type="datetime" class="client-phone-input" id="client-phone" placeholder="Telefone">
+            <input type="text" class="client-email-input" id="client-email" placeholder="Email">
+        </section>
+
+
+        <textarea name="text" class="client-textarea" id="" cols="30" rows="10"
+        placeholder="Nota"></textarea>
+
+        <section class="client-delivery">
+            <button class="client-delivery-btn--main " onclick="activeBtn()">FAZER ENTREGA <span class="caret"></span> </button>
+            <button class="client-delivery-btn modal-send" style="margin-top:7px;">PRODUTO</button>
+            <button class="client-delivery-btn">EBOOKS</button>
+            <button class="client-delivery-btn">CURSO</button>
+        </section>
+
+        <script>
+            let clientDeliveryBtn = document.querySelectorAll('.client-delivery-btn');
+            let isActive = false;
+            const activeBtn = function(){
+               
+                if(!isActive){
+                    clientDeliveryBtn[0].style.display = 'block';
+                    clientDeliveryBtn[1].style.display = 'block'
+                    clientDeliveryBtn[2].style.display = 'block';
+                    isActive = true;
+
+                }
+                else {
+                    clientDeliveryBtn[0].style.display = 'none';
+                    clientDeliveryBtn[1].style.display = 'none'
+                    clientDeliveryBtn[2].style.display = 'none';
+                    isActive = false;
+
+                }
+                
+                
+            }
+        </script>
+
+    
+    <!-- first modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-box-content client-modal">
+                <h3>Enviar produto</h3>
+                
+                <section class="modal-box-section">
+
+                    <section class="request">
+                        
+                        <button class="request-btn black" onclick="clickDelivery(0)">
+                    
+                            <p>Nome do produto</p>
+                          
+                        </button>
+                
+                        <div class="request-list" style="display:none;">
+                           <button class="client-send-btn">Enviar</button>
+                        </div>
+                   
+                    </section>
+
+
+                    <section class="request">
+                        
+                        <button class="request-btn black" onclick="clickDelivery(1)">
+                    
+                            <p>Nome do produto</p>
+                          
+                        </button>
+                
+                        <div class="request-list" style="display:none;">
+                           <button class="client-send-btn">Enviar</button>
+                        </div>
+                   
+                    </section>
+
+
+
+                    <section class="request">
+                        
+                        <button class="request-btn black" onclick="clickDelivery(2)">
+                    
+                            <p>Nome do produto</p>
+                          
+                        </button>
+                
+                        <div class="request-list" style="display:none;">
+                           <button class="client-send-btn">Enviar</button>
+                        </div>
+                   
+                    </section>
+
+
+
+
+                    <section class="request">
+                        
+                        <button class="request-btn black" onclick="clickDelivery(3)">
+                    
+                            <p>Nome do produto</p>
+                          
+                        </button>
+                
+                        <div class="request-list" style="display:none;">
+                           <button class="client-send-btn">Enviar</button>
+                        </div>
+                   
+                    </section>
+
+
+
+                    <section class="request">
+                        
+                        <button class="request-btn black" onclick="clickDelivery(4)">
+                    
+                            <p>Nome do produto</p>
+                          
+                        </button>
+                
+                        <div class="request-list" style="display:none;">
+                           <button class="client-send-btn">Enviar</button>
+                        </div>
+                   
+                    </section>
+
+
+
+
+
+                  
+
+
+                </section>
+
+            </div>
+        </div>
+        </div>
+        
+    <div id="myOverlay" class="overlay"></div>
+
+
+    
+    <!--the pop up-->
+
+    <div id="myPopup" class="popup">
+        <span class="close-pop-up">&times;</span>
+        <p></p>
+      </div>
+
+
+    </main>
+
+    
+</body>
+<script src="./../js/menu.js"></script>
+<script src="./../js/cliente.js"></script>
+<script src="./../js/editarClient.js"></script>
+<script src="./../js/clientSendDelivery.js"></script>
+<script src="./../js/caret.js"></script>
+
+</html>

@@ -1,5 +1,3 @@
-import jardel from './../../../mintel-mobile-tablet/src/js/popUp';
-let h = jardel();
 
 
 window.onload = function() {

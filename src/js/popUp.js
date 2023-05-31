@@ -6,9 +6,7 @@ const myPopupText = document.querySelector('.popup p')
 
 
 const ebookFileInputActivePopup = document.querySelector('#ebook-file-input');
-let jardel = function(){
-  console.log('fjdf')
-}
+
 
 
 ebookFileInputActivePopup.addEventListener('change',function(){

@@ -1,0 +1,160 @@
+.client-section {
+    display: flex;
+    flex-direction: column;
+    & input {
+        display: block;
+        width: 100%;
+        height: 23px;
+        border: 2px solid #e0e0e0;
+        border-radius: 2px;
+        margin: 5px 0;
+        text-indent: 15px;
+    }
+    &-btn {
+        color: #fff;
+        background-color: #000;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+}
+
+
+.client-textarea {
+    display: inline-block;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 92px;
+    border: 2px solid #e0e0e0;
+    margin-top: 16px;
+
+    &::placeholder {
+       
+        text-indent: 24px;
+       
+    }
+}
+
+.active {
+    background-color: #ffee55;
+    color: #000;
+}
+
+
+.client-delivery {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(225, 216, 216);
+    width: 252px;
+    margin: 20px auto 0 auto;
+
+    &-btn--main{
+        display: block;
+        height: 36px;
+        line-height: 36px;
+       
+        
+
+    }
+
+    &-btn {
+
+        display: none;
+        width: 216px;
+        height: 27px;
+        line-height: 27px;
+        margin: 3px auto 5px auto;
+       
+    }
+}
+
+
+.caret {
+    position: absolute;
+    margin-top: 11px;
+    width: 0;
+    height: 0;
+    border-left: 1em solid transparent;
+    border-right: 1em solid transparent;
+    border-top: 1em solid gray;
+    transition: 0.3s;
+    margin-left: 1em;
+    border-radius: 3px;
+  }
+
+  .caret-rotate {
+    transform: rotate(180deg);
+  }
+
+
+.modal {
+    overflow: auto;
+}
+
+  .modal-box-content h3 {
+    margin: 0;
+  }
+
+.request {
+    width: 100%;
+}
+.request-btn {
+    height: 28px;
+    line-height:28px;
+}
+
+
+.modal-box-section {
+    flex-direction: column;
+}
+
+.modal {
+    width: 70%;
+    height: 360px;
+    top: 50%;
+}
+
+.black {
+    color: #000;
+    color:#fff;
+    font-weight: normal;
+}
+
+.request-list {
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+    border-left: 1px solid #47d72f;
+    border-right: 1px solid #47d72f;
+    border-bottom: 1px solid #47d72f;
+    border-radius: 2px;
+}
+
+.client-send-btn {
+    display: block;
+    width: 70px;
+    height: 40px;
+    line-height: 40px;
+    margin: 10px auto 0 auto;
+    border-radius: 5px;
+    background-color: #47d72f;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

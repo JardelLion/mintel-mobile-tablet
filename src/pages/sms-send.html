@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../../dist/css/style.css">
+    <link rel="stylesheet" href="./../../dist/css/sms.css">
+
+    <link rel="stylesheet" href="./../../dist/css/modal.css">
+    <link rel="stylesheet" href="./../../dist/css/clientes.css">
+    <link rel="stylesheet" href="./../../dist/css/send_sms.css">
+   
+    
+
+    <title>Sms Send </title>
+    
+</head>
+<body>
+    <header>
+        <div class="mintel menu">
+        
+            <button class="menu__btn"  id='menu__xmark'>
+                <img src="./../img/xmark-solid 1.png" alt="Xmark solid 1">
+            </button>
+
+            <button class="menu__btn" id="menu__burger" >
+                <img src="./../img/bars-solid 1.png" alt="bar solid">
+            </button>
+
+            <h1>SMS</h1>
+        </div>
+    
+        <nav class="menu__nav">
+            <ul class="nav__grid-container">
+    
+                <li class="grid-item">
+                    <a href="./home.html">Home</a>
+                </li>
+                <li class="grid-item">
+                    <a href="./newsletter.html">Newsletter</a>
+                </li>
+                <li class="grid-item">
+                    <a href="./ebooks.html">Ebooks</a>
+                </li>
+                <li class="grid-item">
+                    <a href="">Clientes</a>
+                </li>
+                <li class="grid-item">
+                    <a href="">Cursos</a>
+                </li>
+                <li class="grid-item">
+                    <a href="">Produtos</a>
+                </li>
+    
+                <li class="grid-item">
+                    <a href="">SMS</a>
+                </li>
+    
+                <li class="grid-item">
+                    <a href="">Sair</a>
+                </li>
+                </ul>
+        </nav>
+    </header>
+
+    <main class="main close-content">
+        <section class="sms-section">
+            <button class="sms-section-btn" id="sms-create-list">
+                <a href="#">Enviar sms</a>
+            </button>
+
+            <button class="sms-section-btn modal-send" id="sms-target">
+                DESTINATÁRIO
+            </button>
+        </section>
+
+
+        <textarea name="text" class="sms-textarea" id="" cols="30" rows="10"
+        placeholder="What is Revenue Sharing?How is it Different from Profit Sharing"></textarea>
+
+            <!-- first modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-box-content client-modal">
+                <h3>Lista de Envio</h3>
+                
+                <section class="modal-box-section">
+
+                    <section class="request">
+                        <button class="request-btn black">
+                           
+                            <p>Nome do cliente</p>
+                            <input type="checkbox" value="" class="sms-checkbox" checked>
+                          
+                        </button>
+                
+                    </section>
+
+
+                    <section class="request">
+                        <button class="request-btn black">
+                           
+                            <p>Nome do cliente</p>
+                            <input type="checkbox" value="" class="sms-checkbox">
+                          
+                        </button>
+                
+                    </section>
+            
+                    <section class="request">
+                        <button class="request-btn black">
+                           
+                            <p>Nome do cliente</p>
+                            <input type="checkbox" value="" class="sms-checkbox" checked>
+                          
+                        </button>
+                
+                    </section>
+            
+            
+            
+
+
+                </section>
+
+                <h3 style="margin-top:15px">Contactos</h3>
+
+                <section class="modal-box-section">
+
+                    <section class="request">
+                        <button class="request-btn black">
+                           
+                            <p>Nome do cliente</p>
+                            <input type="checkbox" value="" class="sms-checkbox" checked>
+                          
+                        </button>
+                
+                    </section>
+
+
+                    <section class="request">
+                        <button class="request-btn black">
+                           
+                            <p>Nome do cliente</p>
+                            <input type="checkbox" value="" class="sms-checkbox">
+                          
+                        </button>
+                
+                    </section>
+            
+                    <section class="request">
+                        <button class="request-btn black">
+                           
+                            <p>Nome do cliente</p>
+                            <input type="checkbox" value="" class="sms-checkbox" checked>
+                          
+                        </button>
+                
+                    </section>
+            
+            
+            
+
+
+                </section>
+                
+
+
+
+
+            </div>
+        </div>
+        </div>
+        
+    <div id="myOverlay" class="overlay"></div>
+
+
+       
+
+
+    </main>
+    
+</body>
+<script src="./../js/menu.js"></script>
+<script src="./../js/cliente.js"></script>
+
+</html>
