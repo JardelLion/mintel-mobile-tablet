@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../../dist/css/style.css">
+    <link rel="stylesheet" href="./../../dist/css/ebooks.css">
+    <title>Cliente</title>
+    <script src="./../js/jquery.js"></script>
+
+    <style>
+        .request-btn a {
+            color: #fff;
+            font-size: .9rem;
+            text-transform: capitalize;
+            text-decoration: none;
+            
+        }
+    </style>
+   
+  
+</head>
+<body>
+    <div id="api-markdown"></div>
+    <header>
+        <div class="mintel menu">
+        
+            <button class="menu__btn"  id='menu__xmark'>
+                <img src="./../img/xmark-solid 1.png" alt="Xmark solid 1">
+            </button>
+
+            <button class="menu__btn" id="menu__burger" >
+                <img src="./../img/bars-solid 1.png" alt="bar solid">
+            </button>
+
+            <h1>Cliente</h1>
+        </div>
+    
+        <nav class="menu__nav">
+            <ul class="nav__grid-container">
+    
+                <li class="grid-item">
+                    <a href="./home.html">Home</a>
+                </li>
+                <li class="grid-item">
+                    <a href="./newsletter.html">Newsletter</a>
+                </li>
+                <li class="grid-item">
+                    <a href="./ebooks.html">Ebooks</a>
+                </li>
+                <li class="grid-item">
+                    <a href="">Clientes</a>
+                </li>
+                <li class="grid-item">
+                    <a href="">Cursos</a>
+                </li>
+                <li class="grid-item">
+                    <a href="">Produtos</a>
+                </li>
+    
+                <li class="grid-item">
+                    <a href="">SMS</a>
+                </li>
+    
+                <li class="grid-item">
+                    <a href="">Sair</a>
+                </li>
+                </ul>
+        </nav>
+    </header>
+
+    <main class="main close-content">
+        <section class="ebooks">
+            <button class="ebook-btn" id="ebook-add-link">
+                <a href="./add-ebooks.html">ADICIONAR CLIIENTE</a>
+            </button>
+        </section>
+
+
+        <p class="total-client"></p>
+        <script>
+
+            $(document).ready(function(){
+                $.ajax({
+                    url: "../markdown/cliente/verTodos.json",
+                    type: "get",
+                    dataType: "json",
+                    success: function(data){
+
+                        $('.total-client').text(data['payload'].length + " Clientes");
+
+                        for(let i = 0; i <data["payload"].length; i++){
+
+                            const sectionBox = $("<section></section").appendTo(".main");
+                            sectionBox.addClass("request");
+        
+                            const buttonBox = $('<button></button>').appendTo(sectionBox);
+                            buttonBox.addClass("request-btn");
+                            buttonBox.addClass("black");
+        
+                            const paragragh = $("<p></p").appendTo(buttonBox);
+                            const paragragh2 = $("<p></p").text(data["payload"][i].email).appendTo(buttonBox);
+                            
+                            const paragrahpLink = $("<a></a>")
+                                .attr("href", "home.html?yds=" + data["payload"][i].identificador)
+                                .text(data["payload"][i].nome)
+                                .appendTo(paragragh)
+        
+                        }
+        
+                        
+        
+                    }
+        
+                })
+            })
+           
+        </script>
+
+        
+        
+
+
+    </main>
+    
+</body>
+<script src="./../js/menu.js"></script>
+
+
+
+</html>
