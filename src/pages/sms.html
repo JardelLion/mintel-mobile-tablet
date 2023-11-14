@@ -4,10 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./../../dist/css/style.css">
-    <link rel="stylesheet" href="./../../dist/css/sms.css">
-    <title>SMS
-    </title>
+    <link rel="stylesheet" href="../../dist/css/style.css">
+    <link rel="stylesheet" href="../../dist/css/sms.css">
+    <script src="../js/jquery.js"></script>
+    <title>SMS</title>
+
+    <style>
+        .request-btn a {
+            color: #fff;
+            font-size: .9rem;
+            text-transform: capitalize;
+            text-decoration: none;
+            
+        }
+    </style>
     
 </head>
 <body>
@@ -48,7 +58,7 @@
                 </li>
     
                 <li class="grid-item">
-                    <a href="">SMS</a>
+                    <a href="../pages/sms.html">SMS</a>
                 </li>
     
                 <li class="grid-item">
@@ -67,112 +77,63 @@
         </section>
 
 
-        <p>50 contactos nessa lista</p>
+        <p class="total-sms"></p>
 
-        <section class="request">
-            <button class="request-btn black">
-               
-                <p>Nome do cliente</p>
-                <input type="checkbox" value="" class="sms-checkbox" checked>
-              
-            </button>
-    
-        </section>
+        
+        <script>
 
+            $(document).ready(function(){
+                $.ajax({
+                    url: "../markdown/lista/verTodos.json",
+                    type: "get",
+                    dataType: "json",
+                    success: function(data){
 
+                        $('.total-sms').text(data['payload'].length + " Contactos nessa lista");
 
+                        for(let i = 0; i <data["payload"].length; i++){
 
-        <section class="request">
-            <button class="request-btn black">
-               
-                <p>Nome do cliente</p>
-                <input type="checkbox" value="" class="sms-checkbox">
-              
-            </button>
-    
-        </section>
+                            const sectionBox = $("<section></section").appendTo(".main");
+                            sectionBox.addClass("request");
+        
+                            const buttonBox = $('<button></button>').appendTo(sectionBox);
+                            buttonBox.addClass("request-btn");
+                            buttonBox.addClass("black");
+        
+                            const paragragh = $("<p></p").appendTo(buttonBox);
+                            const input = $("<input></input")
+                                .attr({
+                                    type: "checkbox",
+                                    value: ""
 
+                                })
+                                .addClass("sms-checkbox")
+                                .appendTo(buttonBox);
+                            
+                            const paragrahpLink = $("<a></a>")
+                                .attr("href", "home.html?yds=" + data["payload"][i].identificador)
+                                .text(data["payload"][i].nome)
+                                .appendTo(paragragh)
+        
+                        }
+        
+                        
+        
+                    }
+        
+                })
+            })
+           
+        </script>
 
-
-
-        <section class="request">
-            <button class="request-btn black">
-               
-                <p>Nome do cliente</p>
-                <input type="checkbox" value="" class="sms-checkbox" checked>
-              
-            </button>
-    
-        </section>
-
-
-
-        <section class="request">
-            <button class="request-btn black">
-               
-                <p>Nome do cliente</p>
-                <input type="checkbox" value="" class="sms-checkbox">
-              
-            </button>
-    
-        </section>
-
-
-
-        <section class="request">
-            <button class="request-btn black">
-               
-                <p>Nome do cliente</p>
-                <input type="checkbox" value="" class="sms-checkbox" checked>
-              
-            </button>
-    
-        </section>
-
-
-        <section class="request">
-            <button class="request-btn black">
-               
-                <p>Nome do cliente</p>
-                <input type="checkbox" value="" class="sms-checkbox" >
-              
-            </button>
-    
-        </section>
+      
 
 
 
-        <section class="request">
-            <button class="request-btn black">
-               
-                <p>Nome do cliente</p>
-                <input type="checkbox" value="" class="sms-checkbox" checked>
-              
-            </button>
-    
-        </section>
+      
 
 
-        <section class="request">
-            <button class="request-btn black">
-               
-                <p>Nome do cliente</p>
-                <input type="checkbox" value="" class="sms-checkbox" >
-              
-            </button>
-    
-        </section>
-
-
-        <section class="request">
-            <button class="request-btn black">
-               
-                <p>Nome do cliente</p>
-                <input type="checkbox" value="" class="sms-checkbox" checked>
-              
-            </button>
-    
-        </section>
+        
 
 
 
