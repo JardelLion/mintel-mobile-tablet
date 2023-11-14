@@ -97,63 +97,7 @@
 
         <button id="mmm">click me</button>
 
-        <script>
-            $(document).ready(function() {
-              $("#mmm").on("click", function() {
-                // Extrai os dados do formulário
-                var nome = $("#client-nome").val();
-                var idade = $("#client-phone").val();
-                var cidade = $("#client-email").val();
-                var nota = $("#client-textarea").val();
         
-                // Cria um objeto com os dados do formulário
-                var novosDados = {
-                  nome: nome,
-                  idade: idade,
-                  cidade: cidade
-                };
-        
-                // Faz uma requisição ao servidor para atualizar o arquivo JSON
-                $.ajax({
-                  url: "../markdown/cliente/verTodos.json", // Caminho do seu arquivo JSON no servidor
-                  type: "get",
-                  contentType: "application/json",
-                  data: JSON.stringify(novosDados),
-                  success: function(response) {
-                    console.log("Arquivo JSON atualizado com sucesso:", response);
-                  },
-                  error: function(error) {
-                    console.error("Erro ao atualizar o arquivo JSON:", error);
-                  }
-                });
-              });
-            });
-          </script>
-
-          <script>
-            const express = require("express")
-
-            const app = express();
-
-            app.post("/atualizar.json", (req, res) => {
-                // Leitura do arquivo JSON existente
-                const caminhoArquivo = "../markdown/cliente/verTodos.json";
-                const dadosExistente = JSON.parse(fs.readFileSync(caminhoArquivo, "utf-8"));
-              
-                // Dados do formulário enviados no corpo da requisição
-                const novosDados = req.body;
-              
-                // Atualiza os dados existentes com os novos dados
-                Object.assign(dadosExistente, novosDados);
-              
-                // Escreve os dados atualizados de volta no arquivo JSON
-                fs.writeFileSync(caminhoArquivo, JSON.stringify(dadosExistente, null, 2));
-              
-                // Retorna os dados atualizados como resposta (pode ser útil no lado do cliente)
-                res.json(dadosExistente);
-              });
-              
-          </script>
 
        
 
