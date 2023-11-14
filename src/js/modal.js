@@ -9,11 +9,13 @@ myButtonModal.addEventListener("click", function() {
 });
 
 myOverlay.addEventListener("click", function() {
+  
   myModal.style.display = "none";
   myOverlay.style.display = "none";
 });
 
 closeBtn.addEventListener("click", function() {
+ 
   myModal.style.display = "none";
   myOverlay.style.display = "none";
 });
